@@ -1,10 +1,8 @@
-import { Section, Cell, Image, List } from '@telegram-apps/telegram-ui';
+import { Section, Cell, List } from '@telegram-apps/telegram-ui';
 import type { FC } from 'react';
 
 import { Link } from '@/components/Link/Link.tsx';
 import { Page } from '@/components/Page.tsx';
-
-import tonSvg from './ton.svg';
 
 export const IndexPage: FC = () => {
   return (
@@ -16,7 +14,6 @@ export const IndexPage: FC = () => {
         >
           <Link to="/ton-connect">
             <Cell
-              before={<Image src={tonSvg} style={{ backgroundColor: '#007AFF' }}/>}
               subtitle="Connect your TON wallet"
             >
               TON Connect
