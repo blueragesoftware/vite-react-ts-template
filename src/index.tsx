@@ -35,6 +35,6 @@ try {
         </StrictMode>,
       );
     });
-} catch (e) {
-  root.render(<EnvUnsupported/>);
+} catch (error) {
+  root.render(EnvUnsupported(error instanceof Error ? error.message : 'Unknown error'));
 }
