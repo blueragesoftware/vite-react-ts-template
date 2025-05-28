@@ -35,5 +35,7 @@
     {
       "path": "./tsconfig.node.json"
     }
-  ]
+  ],
+  "noUnusedLocals": false,
+  "noUnusedParameters": false
 }
